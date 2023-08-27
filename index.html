@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Justin Connors" />
+    <meta name="description" content="Justin Connors' personal website" />
+    <meta
+      name="keywords"
+      content="Justin Connors, Justin, Connors, Justin Connors' personal website"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/themes/dark.css"
+    />
+    <link rel="stylesheet" href="path/to/shoelace/dist/themes/dark.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Justin Connors</title>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <sl-tab-group placement="start" class="tab-group">
+        <sl-tab slot="nav" panel="home" active>Home</sl-tab>
+        <sl-tab slot="nav" panel="about">About</sl-tab>
+        <sl-tab slot="nav" panel="projects">Projects</sl-tab>
+        <sl-tab slot="nav" panel="contact">Contact</sl-tab>
+
+        <sl-tab-panel name="home">
+          Hello my name is Justin Connors.
+        </sl-tab-panel>
+      </sl-tab-group>
+    </nav>
+  </body>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace-autoloader.js"
+  ></script>
+  <script src="/index.js"></script>
+</html>

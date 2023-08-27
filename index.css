@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+}
+
+.tab-group::part(active-tab-indicator) {
+  --indicator-color: white;
+}
+
+.sl-tab::part(base) {
+  color: white;
+}
