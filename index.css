@@ -3,13 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .tab-group::part(active-tab-indicator) {
   --indicator-color: white;
 }
 
-.sl-tab::part(base) {
+.tab-text {
   color: white;
+}
+
+.tab-slot:hover {
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  width: 95%;
+  align-self: center;
 }

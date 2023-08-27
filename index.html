@@ -19,18 +19,24 @@
   </head>
 
   <body>
-    <nav class="nav-bar">
-      <sl-tab-group placement="start" class="tab-group">
-        <sl-tab slot="nav" panel="home" active>Home</sl-tab>
-        <sl-tab slot="nav" panel="about">About</sl-tab>
-        <sl-tab slot="nav" panel="projects">Projects</sl-tab>
-        <sl-tab slot="nav" panel="contact">Contact</sl-tab>
+    <sl-tab-group placement="start" class="tab-group">
+      <sl-tab slot="nav" panel="home" active class="tab-slot"
+        ><span class="tab-text">Home</span></sl-tab
+      >
+      <sl-tab slot="nav" panel="about" class="tab-slot"
+        ><span class="tab-text">About</span></sl-tab
+      >
+      <sl-tab slot="nav" panel="projects" class="tab-slot"
+        ><span class="tab-text">Projects</span></sl-tab
+      >
+      <sl-tab slot="nav" panel="contact" class="tab-slot"
+        ><span class="tab-text">Contact</span></sl-tab
+      >
 
-        <sl-tab-panel name="home">
-          Hello my name is Justin Connors.
-        </sl-tab-panel>
-      </sl-tab-group>
-    </nav>
+      <sl-tab-panel name="home">
+        Hello my name is Justin Connors.
+      </sl-tab-panel>
+    </sl-tab-group>
   </body>
   <script
     type="module"
