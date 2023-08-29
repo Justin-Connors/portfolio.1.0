@@ -10,13 +10,7 @@
   --indicator-color: white;
 }
 
-.tab-text {
-  color: white;
-}
-
-.tab-slot:hover {
-  background-color: #1e1e1e;
-  border-radius: 0.5rem;
-  width: 95%;
-  align-self: center;
+a {
+  text-decoration: none;
+  color: lightblue;
 }

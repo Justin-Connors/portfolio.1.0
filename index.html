@@ -19,23 +19,47 @@
   </head>
 
   <body>
-    <sl-tab-group placement="start" class="tab-group">
-      <sl-tab slot="nav" panel="home" active class="tab-slot"
-        ><span class="tab-text">Home</span></sl-tab
-      >
-      <sl-tab slot="nav" panel="about" class="tab-slot"
-        ><span class="tab-text">About</span></sl-tab
-      >
-      <sl-tab slot="nav" panel="projects" class="tab-slot"
-        ><span class="tab-text">Projects</span></sl-tab
-      >
-      <sl-tab slot="nav" panel="contact" class="tab-slot"
-        ><span class="tab-text">Contact</span></sl-tab
-      >
-
+    <sl-tab-group placement="start">
+      <sl-tab slot="nav" panel="home" active>Home</sl-tab>
+      <sl-tab slot="nav" panel="about">About</sl-tab>
+      <sl-tab slot="nav" panel="projects">Projects</sl-tab>
+      <sl-tab slot="nav" panel="contact">Contact</sl-tab>
+      <!-- Home tab -->
       <sl-tab-panel name="home">
         Hello my name is Justin Connors.
       </sl-tab-panel>
+      <!-- End Home tab -->
+
+      <!-- About tab -->
+      <sl-tab-panel name="about">
+        I am a software engineer with a passion for learning and creating.
+      </sl-tab-panel>
+      <!-- End About tab -->
+
+      <!-- Projects tab -->
+      <sl-tab-panel name="projects"> 
+        <!-- Start of card -->
+        <sl-card class=""card-header">
+        <div slot="header">
+          Placeholder Header
+        </div>
+        <div>
+          Placeholder Body
+        </div>
+        <div slot="footer">
+          Placeholder Footer
+        </div>
+        </sl-card>
+        <!-- End of card -->
+      </sl-tab-panel>
+      <!-- End Projects tab -->
+
+      <!-- Contact tab -->
+      <sl-tab-panel name="contact">
+        <p>Send me an email!</p>
+        <a href="mailto: justinconnors@hotmail.ca">justinconnors@hotmail.ca</a>
+      </sl-tab-panel>
+
     </sl-tab-group>
   </body>
   <script
