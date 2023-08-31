@@ -6,10 +6,6 @@
   font-size: 1rem;
 }
 
-.tab-group::part(active-tab-indicator) {
-  --indicator-color: white;
-}
-
 a {
   text-decoration: none;
   color: lightblue;
@@ -23,4 +19,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.custom-tab-group {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.custom-tab-group::part(active-tab-indicator) {
+  display: none;
+}
+
+.custom-tab-group::part(base) {
+  min-height: 95vh;
+}
+
+.custom-tab-group::part(tabs) {
+  justify-content: center;
 }
