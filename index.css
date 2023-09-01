@@ -34,5 +34,8 @@ a {
   width: 300px;
 }
 
-.card::part(footer) {
+.github-link-project-tab {
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
