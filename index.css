@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1rem;
 }
 
 .intro {
@@ -56,6 +55,26 @@ a {
   margin-top: 2rem;
 }
 
+.about-section {
+  max-width: 90vw;
+  margin: 1rem auto;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+.skill {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.contact {
+  font-size: 4rem;
+  width: 90%;
+  margin: auto;
+}
+
 @media only screen and (max-width: 720px) {
   .intro {
     font-size: 4rem;
@@ -63,5 +82,27 @@ a {
 
   .intro span {
     font-size: 4rem;
+  }
+
+  .contact {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro {
+    font-size: 4rem;
+  }
+
+  .intro span {
+    font-size: 4rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  * {
+    overflow: hidden;
   }
 }
