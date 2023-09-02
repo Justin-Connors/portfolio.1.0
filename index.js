@@ -1,7 +1,7 @@
 introName = document.getElementById("intro-name");
 
-const introNameText = `I'm Justin,`;
-const introNameTextSpeed = 150;
+const introNameText = `Justin`;
+const introNameTextSpeed = 200;
 
 let i = 0;
 

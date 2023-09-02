@@ -19,11 +19,12 @@
 .intro span {
   font-size: 8rem;
   text-align: left;
+  color: #27baf6;
 }
 
 a {
   text-decoration: none;
-  color: lightblue;
+  color: #27baf6;
 }
 
 .custom-tab-group {
