@@ -26,7 +26,11 @@
       <sl-tab slot="nav" panel="contact">Contact</sl-tab>
       <!-- Home tab -->
       <sl-tab-panel name="home">
-        Hello my name is Justin Connors.
+        <div class="intro">
+          Hi, <br />
+          <span id="intro-name"></span> <br />
+          web developer. <br />
+        </div>
       </sl-tab-panel>
       <!-- End Home tab -->
 
@@ -79,8 +83,8 @@
 
         <sl-card class="card">
           <strong>An Employee Tracker</strong><br />
-          This is an Employee tracker using Dotenv, inquirer, express, mysql,
-          and sequelize. I also have a short video show casing this project.<br />
+          This is an Employee tracker using Dotenv, inquirer, Express.js, MySQL,
+          and Sequelize. I also have a short video show casing this project.<br />
 
           <div slot="footer">
             <sl-button
@@ -97,6 +101,7 @@
         </sl-card>
         <!-- End of card -->
         <p class="github-link-project-tab">
+          These are just my favourite projects, I've done others.<br />
           You can checkout other stuff if you wish or see what I'm up to on
           <a target="_blank" href="https://github.com/Justin-Connors"
             >My GitHub</a

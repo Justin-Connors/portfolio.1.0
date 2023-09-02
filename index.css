@@ -6,6 +6,21 @@
   font-size: 1rem;
 }
 
+.intro {
+  font-size: 8rem;
+  text-align: left;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.intro span {
+  font-size: 8rem;
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   color: lightblue;
@@ -38,4 +53,14 @@ a {
   max-width: 80vw;
   margin: 0 auto;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .intro {
+    font-size: 4rem;
+  }
+
+  .intro span {
+    font-size: 4rem;
+  }
 }
