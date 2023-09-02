@@ -18,6 +18,17 @@
     <title>Justin Connors</title>
   </head>
 
+  <style>
+    body {
+      opacity: 0;
+    }
+
+    body.ready {
+      opacity: 1;
+      transition: 0.5s opacity;
+    }
+  </style>
+
   <body>
     <sl-tab-group class="custom-tab-group">
       <sl-tab slot="nav" panel="home" active>Home</sl-tab>
@@ -170,6 +181,18 @@
       <!-- End Contact tab -->
     </sl-tab-group>
   </body>
+  <script type="module">
+    await Promise.allSettled([
+      customElements.whenDefined("sl-tab-group"),
+      customElements.whenDefined("sl-tab"),
+      customElements.whenDefined("sl-tab-panel"),
+      customElements.whenDefined("sl-button"),
+      customElements.whenDefined("sl-progress-bar"),
+      customElements.whenDefined("sl-card"),
+    ]);
+
+    document.body.classList.add("ready");
+  </script>
   <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace-autoloader.js"
