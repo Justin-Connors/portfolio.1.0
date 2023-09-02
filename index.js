@@ -1,16 +1,18 @@
 introName = document.getElementById("intro-name");
 
 const introNameText = `Justin`;
-const introNameTextSpeed = 200;
+const introNameTextSpeed = 150;
 
 let i = 0;
 
 function introNamePrint() {
-  if (i < introNameText.length) {
-    introName.innerHTML += introNameText.charAt(i);
-    i++;
-    setTimeout(introNamePrint, introNameTextSpeed);
-  }
+  setTimeout(() => {
+    if (i < introNameText.length) {
+      introName.innerHTML += introNameText.charAt(i);
+      i++;
+      setTimeout(introNamePrint, introNameTextSpeed);
+    }
+  }, 250);
 }
 
 introNamePrint();
