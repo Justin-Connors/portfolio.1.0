@@ -4,7 +4,7 @@ const introNameText = `Justin`;
 const introNameTextSpeed = 150;
 
 let i = 0;
-
+// intro name printing function
 function introNamePrint() {
   setTimeout(() => {
     if (i < introNameText.length) {
